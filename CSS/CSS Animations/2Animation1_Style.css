@@ -1,0 +1,98 @@
+.box1{
+    height:100px;
+    width:300px;
+    background-color: pink;
+
+    animation-name: fontAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: 3;
+    animation-direction: normal;
+
+    /*animation:fontAnimation 2s ease-in 0s 3 normal*/
+}
+
+@keyframes fontAnimation{
+    from{
+        font-size: 20px;
+        background-color: paleturquoise;
+    }
+    to{
+        font-size: 40px;
+        background-color: rosybrown;
+        border-radius: 30px;
+    }
+}
+
+.box2{
+    height:100px;
+    width:300px;
+    background-color: pink;
+
+    animation-name: colorAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: 3;
+    animation-direction: normal;
+}
+
+@keyframes colorAnimation{
+    from{
+        background-color: paleturquoise;
+    }
+    to{
+        background-color: rosybrown;
+    }
+}
+
+.box3{
+    height:100px;
+    width:300px;
+    background-color: pink;
+
+    animation-name: widthAnimation;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: 3;
+    animation-direction: normal;
+}
+
+@keyframes widthAnimation{
+    from{
+        width:10px;
+    }
+    to{
+        width:400px;
+    }
+}
+
+.box4{
+    height:100px;
+    width:300px;
+    background-color: pink;
+
+    animation-name: coloranimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: 3;
+    animation-direction: normal;
+}
+
+@keyframes coloranimation{    /*Multiple Stages of Animation*/
+    0%{
+        background-color: plum;
+    }
+
+    50%{
+        background-color: aquamarine;
+    }
+
+    100%{
+        background-color: gray;
+    }
+
+}

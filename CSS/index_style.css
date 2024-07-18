@@ -1,0 +1,109 @@
+*{
+    font-family: "Courier New";
+}
+
+h1,
+h3{
+    color:#b92b27;
+}
+
+#login{                                     /*id*/
+    background-color: white;
+}
+
+#signup{                                    /*id*/
+    background-color: #b92b27;
+    color:white;
+}
+
+.upvote{                                    /*class*/
+    background-color: green;
+    color:aliceblue;
+}
+
+/*descendant selector*/
+.post a{                                     /*all anchor tags which are inside the post class*/
+    color:purple;
+    background-color:yellow;
+}
+
+nav ul li a{                                 /*multiple level descendents*/
+    color:hotpink;
+}
+
+p+h3{                                        /*Adjacent sibling combinator=all h3 immediately after p*/
+    text-decoration: underline;       
+}
+
+.upvote + button{                           /*All buttons immediately after upvote class*/
+    background-color: cornflowerblue;
+    color:darkblue;
+}
+
+div > input{                                  /*All inputs inside div*/
+    background-color: darkgray;
+    color:black;
+}
+
+input[type="text"]{                           /*Attribute selector=for 'type' attribute and value 'text'*/
+    color:green;
+}
+
+input[type="password"]{                      /*for 'type' attribute and value 'text'*/
+    color:red;
+}
+
+input[type]{                                 /*for all 'type' attrubutes*/
+    background-color: ghostwhite; 
+}
+
+button:hover{
+    background-color: black;
+    color:white;
+}
+
+h3:hover{
+    text-decoration: overline;
+}
+
+button:active{                                 /*When click on button it becomes active*/
+    background-color:hotpink;
+    color:black;
+}
+
+p:active{                                      /*Pseudo Class*/
+    font-weight: bold;
+    color:green;
+}
+
+input[type="radio"]:checked + label{           /*Pseudo Class*/
+    color:red;
+    font-weight: bold;
+}
+
+div:nth-of-type(2n){                           /*Pseudo class*/
+    background-color: blanchedalmond;
+}
+
+h1::first-letter{                              /*Pseudo Element*/
+    color:black;
+}
+
+p::first-line{                                  /*Pseudo Element*/
+    color:purple;
+}
+
+p::selection{
+    background-color: cadetblue;              /*When we select some elements then it gives background
+                                                 color to it*/
+}
+
+h3{
+    background-color: aliceblue;
+}                                                 /*Cascading Property*/
+h3{
+    background-color: blanchedalmond;
+}
+
+
+

@@ -1,0 +1,11 @@
+/*Descendant Selector*/
+#myId p{
+    color:green;
+}
+
+/*Attribute Selector*/
+div[id="myId"]{
+    color:green;
+}
+
+

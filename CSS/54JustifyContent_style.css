@@ -1,0 +1,228 @@
+/*flex-direction: row;
+    justify-content: flex-start;*/
+#container{
+    height:300px;
+    width:80%;
+    background-color: azure;
+    margin:10px auto;
+    border:2px solid black;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start; /*Elements will start from left to right, flex-start point is at left*/
+    /*first colour=violet=left side*/
+}
+
+h1{
+    text-align: center;
+}
+
+#container div{
+    height:100px;
+    width:100px;
+    color:white;
+    text-align:center;
+    font-size:1.5em
+}
+
+/*flex-direction: row-reverse;
+    justify-content: flex-start;*/
+#container2{
+    height:300px;
+    width:80%;
+    background-color: azure;
+    margin:10px auto;
+    border:2px solid black;
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start; /*Elements will start from right to left and flex start point will be at right*/
+    /*first color=red=left side and last color=violet=right side*/
+}
+
+#container2 h1{
+    text-align: center;
+}
+
+#container2 .div2{
+    height:100px;
+    width:100px;
+    color:white;
+    text-align:center;
+    font-size:1.5em
+}
+
+/*flex-direction: column;
+    justify-content:flex-start;*/
+#container3{
+    height:300px;
+    width:80%;
+    background-color: azure;
+    margin:10px auto;
+    border:2px solid black;
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start; /*Elements will Start from top to bottom and first color will be violet*/
+    /*top=violet & bottom=red*/ 
+}
+
+#container3 h1{
+    text-align: center;
+}
+
+#container3 .div3{
+    height:30px;
+    width:300px;
+    color:white;
+    text-align:center;
+    font-size:1.5em
+}
+
+/*flex-direction: column-reverse;
+    justify-content: flex-start; */
+#container4{
+    height:300px;
+    width:80%;
+    background-color: azure;
+    margin:10px auto;
+    border:2px solid black;
+    display:flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start; /*Elements will start from bottom and first color at bottom is violet*/
+    /*Top=red & bottom=violet*/
+}
+
+#container4 h1{
+    text-align: center;
+}
+
+#container4 .div4{
+    height:30px;
+    width:300px;
+    color:white;
+    text-align:center;
+    font-size:1.5em
+}
+
+
+/*flex-direction: row;
+    justify-content: flex-end;*/
+#container5{
+    height:300px;
+    width:80%;
+    background-color: azure;
+    margin:10px auto;
+    border:2px solid black;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end; /*Elements will start from midright to left, flex-start point is at left*/
+        /*first colour=red=left side & last-color=violet=midright*/
+}
+    
+#container5 h1{
+    text-align: center;
+}
+    
+#container5 .div5{
+    height:100px;
+    width:100px;
+    color:white;
+    text-align:center;
+    font-size:1.5em
+}
+    
+/*flex-direction: row-reverse;
+justify-content: flex-end;*/
+#container6{
+    height:300px;
+    width:80%;
+    background-color: azure;
+    margin:10px auto;
+    border:2px solid black;
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end; 
+}
+    
+#container6 h1{
+    text-align: center;
+}
+    
+#container6 .div6{
+    height:100px;
+    width:100px;
+    color:white;
+    text-align:center;
+    font-size:1.5em
+}
+    
+/*flex-direction: column;
+justify-content:flex-end;*/
+#container7{
+    height:300px;
+    width:80%;
+    background-color: azure;
+    margin:10px auto;
+    border:2px solid black;
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-end; 
+}
+    
+#container7 h1{
+    text-align: center;
+}
+    
+#container7 .div7{
+    height:30px;
+    width:300px;
+    color:white;
+    text-align:center;
+    font-size:1.5em
+}
+    
+/*flex-direction: column-reverse;
+    justify-content: flex-end; */
+#container8{
+    height:300px;
+    width:80%;
+    background-color: azure;
+    margin:10px auto;
+    border:2px solid black;
+    display:flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end; 
+}
+    
+#container8 h1{
+    text-align: center;
+}
+    
+#container8 .div8{
+    height:30px;
+    width:300px;
+    color:white;
+    text-align:center;
+    font-size:1.5em
+}
+
+#container9{
+    height:300px;
+    width:80%;
+    background-color: azure;
+    margin:10px auto;
+    border:2px solid black;
+    display:flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+    
+#container9 h1{
+    text-align: center;
+}
+    
+#container9 .div9{
+    height:30px;
+    width:300px;
+    color:white;
+    text-align:center;
+    font-size:1.5em
+}

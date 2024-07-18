@@ -1,0 +1,16 @@
+div{
+    background-color: yellow;
+}
+
+form{
+    background-color: red;
+}
+
+/*input boxes or buttons never inherit property from parent , we have to give them property specifically*/
+input{
+    background-color: inherit;
+}
+
+button{
+    background-color: inherit;
+}

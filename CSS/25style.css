@@ -1,0 +1,24 @@
+h1{
+    color: pink;                       /*element selector*/
+}
+
+#greet{                                  /*id selector*/
+    color:yellow;
+}
+
+.myclass{                                 /*class selector*/
+    color:brown;
+}
+
+div p{                                    /*child combinator  (Descendant selector)*/
+    background-color: black;            /*specificity score=2 bcz 2 elements are there*/
+}
+
+.para{                                    /* specifity score=10*/
+    background-color: blue;
+}
+
+p{                                          /*specificity score=1*/
+    background-color: green;
+}
+

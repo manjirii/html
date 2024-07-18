@@ -1,0 +1,19 @@
+h1{
+    text-align:center;
+    text-decoration: red underline;
+}
+
+h2{
+    text-align:left;
+    text-decoration: pink line-through;
+}
+ 
+h3{
+    text-align:left;
+    text-decoration:green line-through;
+}
+
+p{
+    text-align:right;
+    text-decoration:aqua double overline;
+}

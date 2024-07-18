@@ -1,0 +1,134 @@
+/*To delete all the margins and padding on the screen and to make the clean screen make margins 
+and paddings equal to zero*/
+*{
+    margin:0;
+    padding:0;
+    font-family:"Poppins", sans-serif;
+}
+
+/*Firstly we have to set the background image for main container*/
+.main_box{
+    background: url("Camera.jpg");
+    height:100vh;                         /*This 100vh means 100% viewport height is given, to give full
+                                           viewport height to the main container so that image will be 
+                                           clearly visible (50vh means 50% of viewport height)*/
+    background-size: cover;               /*To cover entire image on the viewport screen*/
+}
+
+.btn_one i{
+    color:white;
+    font-size:30px;                       /*To increase button size*/
+    font-weight:700;                      /*To increase the boldness of button*/
+    position:absolute;                    /*This absolute position is related to the direct parent
+                                            position (position of main box), but we have not given any 
+                                            position to the parent, hence this size is according to the 
+                                            full screen or page*/
+    left:16px;
+    line-height: 60px;                    /*means this button needs 60px line height*/
+    transition:all 0.3 linear;            /*This is to appear sidebar on screen linearly*/ 
+}
+
+.sidebar_menu{
+    position:fixed;
+    left:-300px;                      /*position is negative so that the sidebar menu is out of the screen on left side*/
+    height:100vh;                         /*Height is 100vh so that it takes height of full page/viewport*/
+    width:300px;
+    background-color:rgba(255,255,255,0.1);     /*opacity is 0.1 so that it looks transperant*/ 
+    box-shadow:0 0 6px rgba(255,255,255,0.5);
+    transition:all 0.3 linear;       /*This is to appear sidebar on screen linearly*/                      
+}
+
+.sidebar_menu .logo{                      /*This Styling is only for logo div not for anchor tag 'Apna College'*/
+    position:absolute;
+    width:100%;                           /*Due to 100% it takes 100% width of div*/
+    line-height: 60px;
+    box-shadow:0 2px 4px rgba(255,255,255,0.5);
+    height:60px;                          /*This height is given to apply shadow effect*/
+}
+
+.sidebar_menu .logo a{                    /*This Styling is for anchor tag 'Apna College'*/
+    position:absolute;
+    left:50px;                            /*Distance of Apna College Anchor tag from left*/
+    color:white;                        /*Color of Apna College Tag*/
+    text-decoration:none;                 /*This is to remove underline of the anchor tag Apna College because there is default underline for anchor tag*/
+    font-size:20px;                       /*This is for font size*/
+    font-weight:500;                      /*This is for boldness*/
+}
+
+.sidebar_menu .btn_two i{                 /*This styling is for button two and icon of button two*/
+    color:grey;
+    font-size: 25px;                      /*It is smaller than button one*/
+    line-height: 60px;                    /*It is same as button one*/
+    position:absolute;
+    left:275px;                           /*The Sidebar Button, Apna college Logo and button two should be in the same line*/
+   *opacity:0;                         /*When opacity is set to zero , it completely removes from the screen / it becomes completely invisible*/
+   cursor: pointer;                       /*It gives hand pointer instead of arrow pointer*/
+}
+
+.sidebar_menu .menu{                      /*This is for styling all the menu bar*/
+    position:absolute;
+    width:100%;
+    top:80px;
+}
+
+.sidebar_menu .menu li{
+    margin-top:6px;                       /*It gives 6px void distance at the top of each menu*/
+    padding:14px 20px;                    /*This is left and top padding , padding is inside the border*/
+}
+
+.sidebar_menu .menu i,a{                  /*This styling is for all menu icons and anchor tags*/      
+    color:white;
+    text-decoration:none;                 /*This is to remove underline*/
+    font-size:20px;
+}
+
+.sidebar_menu .menu i{
+    padding-right:8px;                     /*This to give distance between the icon and anchor tag, hence it gives distance of 8px to the right of the icon*/
+}
+
+.sidebar_menu .social_media{               /*This styling is for social_media div and not for icons of social media*/
+    position:absolute;
+    left:25%;                              /*25% from left side of the social media div because it is absolute position i.e.according to the parent*/
+    bottom:50px;
+
+}
+
+.sidebar_menu .social_media i{
+    color:white;                          /*This is color of social media icons*/
+    opacity:0.5;                            /*It makes color of icons greyish transperant*/ 
+    padding:0.5px;                          /*This is to set distance between each icon*/   
+}
+
+#check{
+    display:none;                           /*To remove checkbox from screen*/
+}
+
+.sidebar_menu .menu li:hover{               /*When we hover on the icons / list items*/
+    box-shadow:0 0 6px rgba(255,255,255,0.5);
+}
+
+.btn_one:hover{
+    font-size: 40px;
+}
+
+.btn_two i:hover{                          /*This is styling for when we hover on icon of btn_two*/
+    font-size: 30px;
+}
+
+.sidebar_menu .social_media i:hover{       /*This is styling for when we hover on social media icons*/
+    opacity:1;                             /*Opacity 1 makes clear visibility of icons*/ 
+    transform:scale(1.1);                  /*It increases the side of button*/
+}
+
+#check:checked ~ .sidebar_menu{            /* ~ is a sibling indicator , siblings of checkbox are class btn_one and class sidebar_menu*/
+    left:0;
+} 
+
+#checked:checked ~ .btn_one i{
+    opacity:0;
+}
+
+/*btn_two is a child of .sidebar_menu & .sidebar_menu is a child of checkbox*/
+#check:checked ~ .sidebar_menu .btn_two i{
+    opacity:1;
+}

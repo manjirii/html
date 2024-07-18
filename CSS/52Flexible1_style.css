@@ -1,0 +1,115 @@
+#container{
+    height:300px;
+    width:80%;
+    background-color: azure;
+    margin:10px auto;
+    border:2px solid black;
+    
+    /*flex-direction:row; = All elements will fit in the row
+      flex-direction:column; = All elements will fit in the column*/
+}
+
+h1{
+    text-align: center;
+}
+
+#container div{
+    height:100px;
+    width:300px;
+    color:white;
+    text-align:center;
+    font-size:1.5em
+}
+
+/*Flexbox-direction:row;*/
+#container2{
+    height:300px;
+    width:80%;
+    background-color: azure;
+    margin:10px auto;
+    border:2px solid black;
+    display:flex;
+    flex-direction: row;
+}
+
+#container2 h1{
+    text-align: center;
+}
+
+#container2 .div2{
+    height:100px;
+    width:100px;
+    color:white;
+    text-align:center;
+    font-size:1.5em
+}
+
+/*flexbox-direction:column;*/
+#container3{
+    height:300px;
+    width:80%;
+    background-color: azure;
+    margin:10px auto;
+    border:2px solid black;
+    display:flex;
+    flex-direction: column;
+}
+
+#container3 h1{
+    text-align: center;
+}
+
+#container3 .div3{
+    height:30px;
+    width:300px;
+    color:white;
+    text-align:center;
+    font-size:1.5em
+}
+
+/*flexbox-direction:column-reverse;*/
+#container4{
+    height:300px;
+    width:80%;
+    background-color: azure;
+    margin:10px auto;
+    border:2px solid black;
+    display:flex;
+    flex-direction: column-reverse;
+}
+
+#container4 h1{
+    text-align: center;
+}
+
+#container4 .div4{
+    height:30px;
+    width:300px;
+    color:white;
+    text-align:center;
+    font-size:1.5em
+}
+
+/*flexbox-direction:row-reverse;*/
+#container5{
+    height:300px;
+    width:80%;
+    background-color: azure;
+    margin:10px auto;
+    border:2px solid black;
+    display:flex;
+    flex-direction: row-reverse;
+}
+
+#container5 h1{
+    text-align: center;
+}
+
+#container5 .div5{
+    height:100px;
+    width:100px;
+    color:white;
+    text-align:center;
+    font-size:1.5em
+}
+
