@@ -1,0 +1,26 @@
+.container{
+    background-color: yellow;
+}
+
+.container-sm{
+    background-color: aqua;
+}
+
+.container-md{
+    background-color: blueviolet;
+}
+
+.container-lg{
+    background-color: cadetblue;
+}
+
+.container-xl{
+    background-color: rgb(237, 57, 243);
+}
+.container-xxl{
+    background-color: rgb(244, 116, 116);
+}
+
+.container-fluid{
+    background-color: rgb(244, 129, 42);
+}
